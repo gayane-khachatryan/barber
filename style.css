@@ -1,5 +1,505 @@
-h1{
-    text-align: center;
-    color: pink;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    padding: 5px;
+    background: #313131;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    .row {
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    width: 150px;
+}
+
+.menu {
+    li {
+        list-style: none;
+    }
+
+    a {
+        padding: 0 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.mobile-menu-icon {
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+
+.barber {
+    background-image: url("/images/client-doing-hair-cut-2-min.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-attachment: fixed;*/
+    height: 100vh;
+    color: whitesmoke;
+}
+
+.j-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.content {
+    margin: auto 10px;
+    width: 80%;
+    text-align: right;
+
+    h2 {
+        font-size: 68px;
+        padding: 20px 0;
+
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.button {
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 15px 50px;
+    color: white;
+    background-color: #b09c66;
+    border: none;
+    font-weight: bold;
+}
+
+.welcome-page {
+    background-color: #1b1b1b;
+    color: whitesmoke;
+}
+
+.title {
     font-size: 50px;
+    padding: 50px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px 0;
+}
+
+.card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+.cards {
+    margin: 20px 0;
+    width: 48%;
+
+    .card-img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+
+    }
+}
+
+.logo {
+    margin: 20px 0;
+    background: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    img {
+        width: 50%;
+        object-fit: contain;
+    }
+}
+
+.welcome-info {
+    p {
+        font-size: 20px;
+        color: #b09c66;
+    }
+
+    h3 {
+        font-size: 30px;
+        padding: 20px 0;
+        font-weight: lighter;
+    }
+
+    span {
+        width: 50%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    h5 {
+        font-size: 15px;
+        font-weight: lighter;
+        padding: 50px 0 0;
+    }
+}
+.effect{
+    position: relative;
+
+}
+.effect:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    transition: ease-in 0.2s;
+    transform: rotate(0.5turn);
+
+}
+
+
+.board {
+    background-color: #333333;
+    color: white;
+}
+
+.align {
+    align-items: center;
+}
+
+.info-board {
+    width: 49%;
+    margin: 40px 0;
+
+    .text-min {
+        font-size: 20px;
+
+    }
+
+    .text-md {
+        font-size: 35px;
+        padding: 20px 0 30px;
+    }
+
+    .text-sm {
+        font-size: 17px;
+        padding: 0 0 20px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.backdrop {
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 60vh;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+}
+
+
+.services {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 40px 0;
+
+}
+
+.align-content {
+    align-content: center;
+
+}
+
+.section-header {
+    text-align: center;
+    letter-spacing: 1px;
+
+    h2 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: lighter;
+        padding: 20px 0 30px;
+    }
+}
+
+.img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.card {
+    width: 49%;
+}
+
+.service-details {
+    width: 49%;
+    text-align: center;
+    background-color: #b09c66;
+    padding: 50px 0;
+    font-size: 20px;
+
+    img {
+        width: 30%;
+    }
+}
+
+.pricing {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 50px 0;
+
+    .row {
+        justify-content: space-between;
+
+    }
+}
+
+.price-card {
+    margin: 10px 0;
+    width: 49%;
+
+    h4 {
+        font-size: 25px;
+        letter-spacing: 1px;
+        padding: 20px 0;
+    }
+
+    .price {
+        font-size: 17px;
+        color: #b09c66;
+    }
+
+    p {
+        font-size: 15px;
+        font-weight: lighter;
+        color: #949595;
+        font-style: italic;
+        padding: 0 0 10px;
+        border-bottom: 2px solid #858484;
+    }
+}
+
+.appointment {
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/human-face-expressions-emotions-headshot-young-model-with-thick-beard-posing-with-angry-unfriendly-look3-min.jpg");
+    background-size: cover;
+    height: 80vh;
+    color: white;
+    position: relative;
+
+
+    .row {
+        align-items: center;
+    }
+}
+.appointment-info{
+    position: relative;
+    z-index: 1;
+}
+.appointment:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.44);
+}
+
+.off-title {
+    font-size: 65px;
+}
+
+.appointment-details {
+    width: 49%;
+
+    h3 {
+        font-size: 30px;
+    }
+
+    button {
+        margin-top: 20px;
+        font-size: 15px;
+        padding: 15px 50px;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+    }
+
+    button:hover {
+        color: #b09c66;
+        background-color: white;
+        cursor: pointer;
+    }
+
+}
+
+.our-stories {
+    background-color: #1b1b1b;
+    color: white;
+    padding: 50px 0;
+}
+
+.story {
+    width: 32%;
+    background-color: #b09c66;
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    h5 {
+        padding: 20px 10px;
+        font-size: 25px;
+        font-weight: bold;
+
+    }
+
+    p {
+        padding: 0 10px 30px;
+        font-size: 17px;
+        font-weight: lighter;
+    }
+}
+.effect-slid{
+    position: relative;
+}
+.effect-slid:after {
+    content: "";
+    width: 0%;
+    height:0%;
+    position: absolute;
+    left:0;
+    transition: ease-in 0.2s;
+
+
+}
+.effect-slid:hover:after {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.24);
+
+}
+.effect-1-image{
+    overflow: hidden;
+
+}
+.effect-2-image{
+    transition: 0.5s;
+}
+.effect-2-image:hover{
+    transform: scale(2.2) rotate(5deg);
+}
+.page-end {
+    background-color: #1b1b1b;
+    color: white;
+}
+
+.section-banner {
+    margin: 90px 0;
+    width: 32%;
+    text-align: center;
+
+    img {
+        width: 20%;
+    }
+
+    h5 {
+        font-size: 25px;
+        padding: 20px 0;
+    }
+
+    p {
+        margin: 10px 0;
+        font-size: 20px;
+
+    }
+
+    .edit {
+        color: #b09c66;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+
+}
+
+.info-box {
+    width: 32%;
+    margin: 50px 0;
+    text-align: center;
+
+    img {
+        width: 30%;
+    }
+
+    h5 {
+        font-size: 25px;
+        padding: 20px 0;
+    }
+
+    span {
+        padding: 10px 0;
+
+    }
+
+    p {
+        padding: 5px 0;
+    }
+
+    .color {
+        color: #b09c66;
+    }
+
+    .crop-img {
+        width: 20%;
+    }
+}
+
+.icons-group {
+    padding: 10px;
+    font-size: 20px;
+    color: #b09c66;
+    justify-content: space-evenly;
 }
