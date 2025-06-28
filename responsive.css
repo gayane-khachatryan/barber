@@ -41,7 +41,7 @@
     header .button{
         display: none;
     }
-    .menu{
+    nav{
         display: none;
     }
     .mobile-menu-icon{
@@ -51,7 +51,36 @@
         width: 70%;
     }
 
+   nav {
+        width: 46%;
+        padding: 20px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        background: #2e2b2b;
+       .row{
+           flex-direction: column;
+           justify-content: start;
+           align-items: start;
+           li{
+               padding: 25px 0;
 
+               a{
+                   padding: 0 10px!important;
+               }
+           }
+       }
+       .mobile-menu-icon{
+           position: absolute;
+           right: 20px;
+           top: 20px;
+       }
+       .child-menu {
+           position: relative;
+       }
+
+    }
 
 
 }

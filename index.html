@@ -13,26 +13,40 @@
 </head>
 <body>
 
+<div class="hidden-screen d-none"></div>
+
     <header>
-        <div class="container">
+    <div class="container">
 
-            <div class="row align">
+        <div class="row align">
 
-                <img src="https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/logo-header.png" class="logo">
+            <img src="https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/logo-header.png" class="logo">
 
+            <nav>
                 <ul class="menu row">
 
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="">Pages</a></li>
+                    <li><a href="./index.html" >Home</a></li>
+                    <li><a href="./about.html" >About Us</a></li>
+                    <li><a href="./pages.html">Pages</a>
+                        <ul class="child-menu">
+                            <li><a href="">OUR BARBERS</a></li>
+                            <li ><a href="" >LANDING</a></li>
+                            <li ><a href="">Make an Appointment</a></li>
+                            <li ><a href="">Service </a></li>
+                            <li><a href="">Pricing </a></li>
+                        </ul>
+
+                    </li>
                     <li><a href="">Contact</a></li>
                 </ul>
-                <button class="button">Contact us</button>
+                <i class="fa fa-close mobile-menu-icon" onclick="toggleMenu()"></i>
+            </nav>
+            <button class="button">Contact us</button>
 
-                <i class="fa fa-bars mobile-menu-icon"></i>
-            </div>
+            <i class="fa fa-bars mobile-menu-icon" onclick="toggleMenu()"></i>
         </div>
-    </header>
+    </div>
+</header>
 
     <section class="barber j-right">
         <div class="content ">
@@ -469,5 +483,11 @@
 
     </footer>
 
+    <script>
+    function toggleMenu(){
+        document.querySelector('nav').classList.toggle('d-block');
+        document.querySelector('.hidden-screen').classList.toggle('d-none');
+    }
+</script>
 </body>
 </html>
