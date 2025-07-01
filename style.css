@@ -41,7 +41,9 @@ header {
         justify-content: space-between;
     }
 }
-
+.align-item-center{
+    align-items: center;
+}
 .logo {
     width: 150px;
 }
@@ -588,7 +590,7 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.44);
+    background: rgba(0, 0, 0, 0.63);
 
 }
 .working-times{
@@ -687,12 +689,12 @@ footer {
     width: 24%;
     background-color: #4b4b4c;
     color: white;
+    align-content: center;
     text-align: center;
     padding:10px;
     margin: 40px 0 0;
 }
 .banner-section{
-    width: 100%;
     background-color: #ffffff;
 }
 .editing{
@@ -767,5 +769,368 @@ footer {
     button:hover{
         cursor: pointer;
         background-color: rgba(9, 13, 14, 0.09);
+    }
+}
+.landing{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/smart-pensive-redhead-hipster-with-full-beard-glasses-dressed-casual-clothes-poses-with-hand-chin-studio-isolated-dark-background5-min.jpg");
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.landing:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+.landing-info{
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+    width: 50%;
+    h2{
+
+        font-size: 90px;
+        padding: 20px 0 ;
+    }
+    p{
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .button:hover{
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color:#b09c66 ;
+    }
+
+}
+.img-edit{
+    width: 55%;
+}
+.pictures{
+    background-color:#1b1b1b;
+    padding: 50px 0;
+}
+.pictures-info{
+    width: 24%;
+    img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+.services-shop{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/vintage-frame-salon-tools-wooden-table-2-min1.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 50px 0;
+    position: relative;
+    .section-header{
+        position: relative;
+        z-index: 1;
+    }
+    .service-details{
+        position: relative;
+        z-index: 2;
+        width: 32%;
+        color: #ffffff;
+    }
+}
+
+
+.services-shop:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.46);
+}
+.weekdays{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/vintage-frame-salon-tools-wooden-table-2-min1.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 50px 0;
+    color: whitesmoke;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.weekdays:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.62);
+}
+
+.select {
+    position: relative;
+    z-index: 1;
+    letter-spacing: 1px;
+
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 20px 0;
+        border: 3px solid #b09c66;
+    }
+
+    h4 {
+        font-size: 20px;
+        padding: 15px 0;
+    }
+
+    h2 {
+        font-size: 50px;
+        padding: 0 0 15px ;
+    }
+}
+.design{
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 20px;
+    background-color: #1b1b1b;
+    height: 40vh;
+    border-radius: 10%;
+}
+.card-price{
+    margin: 10px 0;
+    width: 49%;
+
+    h4 {
+        font-size: 20px;
+        letter-spacing: 1px;
+        padding: 20px 0;
+    }
+
+    .price {
+        font-size: 17px;
+        color: #b09c66;
+    }
+
+}
+.weekdays-card {
+    color: black;
+    margin: 10px 0;
+    width: 49%;
+    background-color: #e8e3e3;
+    padding: 30px 20px;
+
+    h4 {
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 20px 0;
+    }
+
+    .price {
+        font-size: 17px;
+        color: #b09c66;
+    }
+}
+.service{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/male-hairdresser-shaking-hands-with-client-barber-hop7.jpg");
+    color: white;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.service-info{
+    position: relative;
+    z-index: 1;
+    letter-spacing: 2px;
+
+    p{
+            font-size: 20px;
+            padding: 15px 0;
+        }
+        h2{
+            font-size: 70px;
+
+        }
+    .button:hover{
+        cursor: pointer;
+        background-color: rgb(255, 255, 255);
+        color:#b09c66 ;
+    }
+
+}
+.service:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.42);
+}
+.offer{
+    padding: 50px 0;
+    background-color:#1b1b1b;
+    text-align: center;
+
+}
+.image-cards{
+    padding: 30px 0;
+    width: 23%;
+
+    img{
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+    h4{
+        font-size: 20px;
+        padding: 10px 0 ;
+        color: white;
+    }
+    p{
+        font-size: 17px;
+        color: #b09c66;
+    }
+}
+.benefit{
+    background-color: #1b1b1b;
+    padding: 60px 0;
+}
+.benefit-cards {
+    margin: 40px 0;
+    position: relative;
+    width: 32%;
+        img{
+            width: 100%;
+           height: 100%;
+            object-fit: cover;
+        }
+
+}
+.banner-img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    transition: 1s;
+    overflow: hidden;
+
+    h3{
+        font-size: 17px;
+        padding: 15px;
+        letter-spacing: 1px;
+        color: white;
+    }
+
+    &:hover{
+        overflow: hidden;
+        background-color: rgba(16, 13, 14, 0.46);
+    }
+}
+.our-price{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/client-doing-hair-cut-2-min.jpg");
+    color: white;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.our-price:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.38);
+}
+.price-info{
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+        h2{
+            font-size: 65px;
+            padding: 15px 0;
+
+        }
+        p{
+            font-size: 18px;
+            padding: 0 0 15px ;
+        }
+        .button:hover{
+            cursor: pointer;
+            background-color: rgb(255, 255, 255);
+            color:#b09c66 ;
+        }
+
+}
+.contact-us{
+    background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/man-getting-his-hair-trimmed-with-trimmer4-min.jpg");
+    color: white;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+.contact-us:after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.42);
+}
+.contact-form{
+    position: relative;
+    z-index: 1;
+        h2{
+            font-size: 85px;
+        }
+}
+.pictures-info-2{
+    width:32%;
+        img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+}
+.touch{
+    background-image: url("https://images02.nicepagecdn.com/a1389d7bc73adea1e1c1fb7e/8bf4f074067f5e5a9d58e2e9/pexels-pixabay-90764.jpg");
+    color: white;
+    background-size: cover;
+    height: 80vh;
+    .row{
+        justify-content: flex-end;
+    }
+}
+.touch-info{
+    width: 55%;
+    text-align: center;
+    h2{
+        font-size: 35px;
     }
 }

@@ -3,13 +3,27 @@
         padding: 0 10px;
     }
     .card{
-        width: 55%;
+        width: 45%;
+    }
+    .card-info-box {
+        width: 47%;
     }
 }
 
 @media (max-width: 800px) {
+    .cards{
+        align-content: center;
+
+    }
+
+    .pictures-info{
+        width: 48%;
+    }
     .section-banner{
         width: 50%;
+    }
+    .info-cards{
+        width: 49%;
     }
     .story{
         width: 49%;
@@ -21,11 +35,14 @@
         width:75%;
     }
     .card{
-        width: 60%;
+        width: 50%;
         margin: 10px 0;
+        img{
+            width: 100%;
+        }
     }
     .service-details{
-        width:85%;
+        width:43%;
         margin: 10px 0;
     }
     .info-box{
@@ -34,6 +51,12 @@
     .cards{
         width:80%;
     }
+
+    .card-info-box{
+        width: 49%;
+    }
+
+
 
 }
 @media (max-width: 700px) {
@@ -47,8 +70,9 @@
     .mobile-menu-icon{
         display: block;
     }
-    .card{
-        width: 70%;
+
+    .info-stories{
+        width:48%;
     }
 
    nav {
@@ -81,7 +105,19 @@
        }
 
     }
-
+    .service-details{
+        width:47%;
+        margin: 10px 0;
+    }
+.card{
+    width: 43%;
+}
+    .card-info-box{
+        width:56%;
+    }
+.image-cards{
+    width: 30%;
+}
 
 }
 @media (max-width: 600px) {
@@ -89,11 +125,17 @@
         width: 70%;
         margin: 20px 0;
     }
+    .info-stories{
+        width:81%;
+    }
     .story{
         width: 80%;
     }
     .info-board{
         width:95%;
+    }
+    .info-cards{
+        width:82%;
     }
     .card{
         width:85%;
@@ -106,11 +148,22 @@
     .cards{
         width:95%;
     }
-
+    .card-info-box{
+        width:95%;
+    }
+    .image-cards,.benefit-cards{
+        width: 48%;
+    }
 }
 @media (max-width: 400px) {
     .info-board{
         width: 100%;
+    }
+    .card-premium{
+        width: 50%;
+    }
+    .card-premium2{
+        width: 41%;
     }
     .card{
         width: 100%;
@@ -123,5 +176,14 @@
     }
     .cards{
         width:100%;
+    }
+    .info-cards{
+        width:100%;
+    }
+    .info-stories{
+        width:100%;
+    }
+    .image-cards,.benefit-cards{
+        width: 98%;
     }
 }
