@@ -117,7 +117,6 @@ header {
 
 .content {
     margin: auto 10px;
-    width: 93%;
     text-align: right;
 
     h2 {
@@ -328,7 +327,7 @@ header {
 }
 
 .service-details {
-    width: 49%;
+    width: 48%;
     text-align: center;
     background-color: #b09c66;
     padding: 50px 0;
@@ -682,7 +681,7 @@ footer {
     background-color:#b09c66 ;
     color: black;
     text-align: center;
-    padding:10px;
+    padding:15px;
     margin: 40px 0 0;
 }
 .card-premium2{
@@ -691,7 +690,7 @@ footer {
     color: white;
     align-content: center;
     text-align: center;
-    padding:10px;
+    padding:15px;
     margin: 40px 0 0;
 }
 .banner-section{
@@ -705,6 +704,7 @@ footer {
     background-color: whitesmoke;
     color: black;
     padding: 25px;
+    margin: 10px 0;
     img{
         width: 200px;
         height: 200px;
@@ -716,6 +716,7 @@ footer {
     p{
         width: 65%;
         text-align: center;
+        padding: 10px 0;
     }
     .text-edit{
         font-weight: bold;
@@ -794,7 +795,6 @@ footer {
     position: relative;
     z-index: 1;
     padding: 0 15px;
-    width: 50%;
     h2{
 
         font-size: 90px;
@@ -829,7 +829,6 @@ footer {
 .services-shop{
     background-image: url("https://assets.nicepagecdn.com/d2cc3eaa/6401142/images/vintage-frame-salon-tools-wooden-table-2-min1.jpg");
     background-size: cover;
-    height: 100vh;
     padding: 50px 0;
     position: relative;
     .section-header{
@@ -838,7 +837,7 @@ footer {
     }
     .service-details{
         position: relative;
-        z-index: 2;
+        z-index: 1;
         width: 32%;
         color: #ffffff;
     }
@@ -962,7 +961,7 @@ footer {
         padding: 15px 0;
     }
     h2{
-        font-size: 70px;
+        font-size: 60px;
 
     }
     .button:hover{
@@ -1115,7 +1114,7 @@ footer {
 }
 .form{
     width: 100%;
-    outline:4px solid gold;
+    outline:4px solid #b09c66;
     display: flex;
     flex-direction: column;
     gap: 20px 0;
@@ -1123,35 +1122,34 @@ footer {
     padding: 20px;
 
 
-
-
-
-
-
-
     input{
-        height: 40px;
+        height: 80px;
         padding: 0 10px;
         background: transparent;
         border-left: none;
         border-right: none;
         border-top: none;
-        border-bottom: 1px solid gold;
+
+        border-bottom: 1px solid #b09c66;
         &::placeholder{
-            color: #c1b5b5;
+            color: #7c7c7c;
+            letter-spacing: 1px;
             font-weight: bold;
+         
         }
 
         &:focus{
             border-left: none;
             border-right: none;
             border-top: none;
-            border-bottom: 1px solid gold;
+            border-bottom: 1px solid #b09c66;
             outline: none;
             color: white;
         }
+
     }
 }
+
 .pictures-info-2{
     width:32%;
     img{
@@ -1178,7 +1176,7 @@ footer {
     }
 }
 .touch-info{
-    width: 84%;
+ 
     margin: auto;
     text-align: center;
     padding: 43px 0;

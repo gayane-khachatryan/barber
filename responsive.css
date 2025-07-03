@@ -3,11 +3,12 @@
         padding: 0 10px;
     }
     .card{
-        width: 45%;
+        width: 50%;
     }
     .card-info-box {
         width: 47%;
     }
+
 }
 
 @media (max-width: 800px) {
@@ -35,7 +36,6 @@
         width:75%;
     }
     .card{
-        width: 50%;
         margin: 10px 0;
         img{
             width: 100%;
@@ -43,37 +43,46 @@
     }
     .service-details{
         width:43%;
-        margin: 10px 0;
+        margin: 5px 0;
     }
     .info-box{
         width:42%;
     }
     .cards{
         width:80%;
+        text-align: center;
     }
-
+    .dectoration-top::before {
+        width: 100%;
+    }
     .card-info-box{
         width: 49%;
     }
-
-
+    .image-cards{
+        width: 32%;
+    }
+    .pictures-info-2{
+        width: 49%;
+    }
 
 }
 @media (max-width: 700px) {
+    header .button {
+        display: none;
+    }
 
-    header .button{
+    nav {
         display: none;
     }
-    nav{
-        display: none;
-    }
-    .mobile-menu-icon{
+
+    .mobile-menu-icon {
         display: block;
     }
 
-    .info-stories{
-        width:48%;
+    .info-stories {
+        width: 48%;
     }
+
     .content {
         h2 {
             font-size: 56px;
@@ -81,7 +90,7 @@
         }
     }
 
-   nav {
+    nav {
         width: 46%;
         padding: 20px;
         left: 0;
@@ -89,107 +98,182 @@
         top: 0;
         height: 100vh;
         background: #2e2b2b;
-       .row{
-           flex-direction: column;
-           justify-content: start;
-           align-items: start;
-           li{
-               padding: 25px 0;
 
-               a{
-                   padding: 0 10px!important;
-               }
-           }
-       }
-       .mobile-menu-icon{
-           position: absolute;
-           right: 20px;
-           top: 20px;
-       }
-       .child-menu {
-           position: relative;
-       }
+        .row {
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+
+            li {
+                padding: 25px 0;
+
+                a {
+                    padding: 0 10px !important;
+                }
+            }
+        }
+
+        .mobile-menu-icon {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+
+        .child-menu {
+            position: relative;
+        }
 
     }
-    .service-details{
-        width:47%;
+
+    .service-details {
+        width: 47%;
         margin: 10px 0;
     }
-.card{
-    width: 43%;
-}
-    .card-info-box{
-        width:56%;
+
+    .card {
+        width: 70%;
     }
-.image-cards{
-    width: 30%;
-}
+
+    .card-info-box {
+        width: 56%;
+    }
+
+
+    .card-premium, .card-premium2 {
+        width: 47%;
+    }
+
+    .pricing{
+        .weekdays-card{
+            width: 100%;
+        }
+    }
+    .landing-info{
+        text-align: center;
+
+    }
 
 }
+
 @media (max-width: 600px) {
-    .section-banner{
+    .section-banner {
         width: 70%;
         margin: 20px 0;
     }
-    .info-stories{
-        width:81%;
+
+    .info-stories {
+        width: 81%;
     }
-    .story{
-        width: 80%;
+
+    .story {
+        width: 90%;
     }
-    .info-board{
-        width:95%;
+
+    .info-board {
+        width: 95%;
     }
-    .info-cards{
-        width:82%;
+
+    .info-cards {
+        width: 82%;
     }
-    .card{
-        width:85%;
+
+    .card {
+        width: 85%;
     }
-    .info-box{
-        width:70%;
+
+    .info-box {
+        width: 70%;
         margin: 20px 0;
 
     }
-    .cards{
-        width:95%;
+
+    .cards {
+        width: 95%;
     }
-    .card-info-box{
-        width:95%;
+
+    .card-info-box {
+        width: 95%;
     }
-    .image-cards,.benefit-cards{
+
+    .image-cards, .benefit-cards {
         width: 48%;
     }
+
+    .pictures-info {
+        width: 88%;
+    }
+
+    .services-shop {
+        .service-details {
+            width: 48%;
+        }
+    }
+    .pictures-info-2{
+        width: 87%;
+    }
+
 }
 @media (max-width: 400px) {
-    .info-board{
+    .info-board {
         width: 100%;
     }
-    .card-premium{
+
+    .image-cards {
+        width: 100%;
+    }
+
+    .card-premium {
         width: 50%;
     }
-    .card-premium2{
+
+    .card-premium2 {
         width: 41%;
     }
-    .card{
+
+    .card {
         width: 100%;
     }
-    .service-details{
-        width:100%;
-    }
-    .story{
+
+    .service-details {
         width: 100%;
     }
-    .cards{
-        width:100%;
+
+    .story {
+        width: 100%;
     }
-    .info-cards{
-        width:100%;
+
+    .cards {
+        width: 100%;
     }
-    .info-stories{
-        width:100%;
+
+    .info-cards {
+        width: 100%;
     }
-    .image-cards,.benefit-cards{
+
+    .info-stories {
+        width: 100%;
+    }
+
+    .image-cards, .benefit-cards {
         width: 98%;
     }
+
+    .pictures-info {
+        width: 100%;
+    }
+
+    .card-premium, .card-premium2 {
+        width: 90%;
+    }
+
+    .services-shop {
+        .service-details {
+            width: 95%;
+        }
+
+    }
+    .pictures-info-2{
+        width: 100%;
+    }
 }
+
